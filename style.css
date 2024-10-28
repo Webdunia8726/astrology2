@@ -24,25 +24,42 @@
 }
 
 
-/* slider */
 /* Make carousel images responsive and centered */
 .carousel-item img {
     width: 100%;
     height: auto;
-
-    
 }
 
-/* Control button styling for better visibility */
-.carousel-control-prev, .carousel-control-next {
+/* Control button styling for larger screens */
+.carousel-control-prev,
+.carousel-control-next {
     width: 5%;
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
-    padding: 20px; /* Increase size for better visibility */
+    padding: 30px; /* Default size */
     border-radius: 50%;
+    transition: all 0.3s ease;
 }
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    /* Smaller control button width */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+
+    /* Smaller icons for better fit on mobile */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 15px; /* Smaller padding */
+        background-color: rgba(0, 0, 0, 0.6); /* Slightly darker for visibility */
+    }
+}
+
 
 /* Ensure no overflow on smaller screens */
 body, html {
@@ -108,7 +125,7 @@ body, html {
     font-size: 3rem; /* Font size for logo text */
     color: #FFD700; /* Highlight color */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
-    -webkit-text-stroke: 1px #000; /* Stroke effect for better visibility */
+
     font-weight: bold; /* Bold text for emphasis */
     padding: 20px;
 }
@@ -191,7 +208,7 @@ body, html {
   
     
     .logo-text {
-        font-size: 25px; /* Font size for logo text */
+        font-size: 30px; /* Font size for logo text */
         color: #FFD700; /* Highlight color */
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
         -webkit-text-stroke: 1px #000; /* Stroke effect for better visibility */
