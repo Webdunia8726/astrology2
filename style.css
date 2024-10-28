@@ -1,0 +1,741 @@
+ a{
+    text-decoration: none;
+ }
+
+ 
+ /* Custom styling for header */
+  .top-header {
+    background-color: black; /* Deep Navy Blue */
+    color: #FFD700; /* Golden Yellow for text */
+    padding: 10px 0;
+}
+.top-header a {
+    color: #FFD700; /* Golden for links */
+    text-decoration: none;
+}
+.top-header .btn-custom {
+    background-color: #FFD700; /* Golden Yellow for button */
+    color: #1A1A40;
+    border: none;
+}
+.top-header .btn-custom:hover {
+    background-color: #FFC107; /* Lighter Golden on hover */
+    color: #1A1A40;
+}
+
+
+/* slider */
+/* Make carousel images responsive and centered */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+
+    
+}
+
+/* Control button styling for better visibility */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    padding: 20px; /* Increase size for better visibility */
+    border-radius: 50%;
+}
+
+/* Ensure no overflow on smaller screens */
+body, html {
+    overflow-x: hidden;
+}
+/* hero section */
+
+/* Hero Section Styles */
+.hero-section {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Column layout for stacking */
+    background-color: #1A1A40;
+    color: #FFD700;
+    padding: 20px;
+    overflow: hidden;
+}
+.hero-content {
+    z-index: 1;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+.hero-content .btn-custom {
+    background-color: #FFD700;
+    color: #1A1A40;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.hero-content .btn-custom:hover {
+    background-color: #FFC107;
+    color: #1A1A40;
+}
+
+/* Logo Section Styles */
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-direction: row; /* Default to row for larger screens */
+}
+.logo-section img {
+    height: 200px;
+
+}
+
+.logo-text {
+    font-size: 3rem; /* Font size for logo text */
+    color: #FFD700; /* Highlight color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    -webkit-text-stroke: 1px #000; /* Stroke effect for better visibility */
+    font-weight: bold; /* Bold text for emphasis */
+    padding: 20px;
+}
+
+/* Attractive Text Styles */
+.attractive-text {
+    font-size: 1.1rem; /* Font size for additional text */
+    color: #FFD700;
+    font-weight: 500; /* Medium bold */
+    text-align: center; /* Center align text on desktop */
+    margin-top: 10px; /* Space above attractive text */
+}
+
+/* Features Section Styles */
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+}
+.feature {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+    min-width: 120px;
+}
+.feature-icon {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+/* Marquee Styles */
+.marquee {
+    width: 100%;
+    background-color: #1A1A40;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: #FFD700;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Mobile Number and Button Styles */
+.contact-info {
+    margin-top: 20px;
+    color: #FFD700;
+}
+.contact-info p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.btn-ask {
+    background-color: #FFD700;
+    color: #1A1A40;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+.btn-ask:hover {
+    background-color: #FFC107;
+    color: #1A1A40;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+    
+    .logo-text {
+        font-size: 25px; /* Font size for logo text */
+        color: #FFD700; /* Highlight color */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        -webkit-text-stroke: 1px #000; /* Stroke effect for better visibility */
+        font-weight: bold; /* Bold text for emphasis */
+padding-left: 50px;
+padding-right: 50px;
+    }
+    .logo-section img {
+        height: 80px;
+
+    }
+    
+    
+    .hero-content h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+    .hero-content p {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+    .attractive-text {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        text-align: center; /* Center align text on mobile */
+    }
+    .feature-icon {
+        font-size: 1.5rem; /* Smaller icon size for mobile */
+    }
+    .marquee {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+    .contact-info p {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+}
+
+
+/* banner section */
+.specialist-section {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    margin: 20px auto; /* Centered margin for spacing */
+    background-color: black; /* Background color */
+    color: #FFD700; /* Default text color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+
+}
+
+
+
+
+
+
+
+.text-content {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+
+
+    text-align: center; /* Center text horizontally */
+}
+
+.text-content h3 {
+    margin: 10px 0; /* Increased margin */
+    font-size: 40px;
+}
+
+.text-content h3:nth-child(1) {
+    color: #FF5733; /* First line color */
+}
+
+.text-content h3:nth-child(2) {
+    color: #33FF57; /* Second line color */
+}
+
+.text-content h3:nth-child(3) {
+    color: #3357FF; /* Third line color */
+}
+
+.text-content h3:nth-child(4) {
+    color: #FFD700; /* Fourth line color */
+}
+
+.contact-number {
+    color: #FF4500; /* Orange color for mobile number */
+    font-weight: bold; /* Make it bold */
+    font-size: 1.5rem; /* Larger font size */
+}
+
+@media (max-width: 768px) {
+    .specialist-section {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+    
+.text-content h3 {
+    margin: 10px 0; /* Increased margin */
+    font-size: 20px;
+}
+   
+    
+}
+
+/* services */
+.services-section {
+    padding: 40px 0;
+}
+.services-section .textp{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.service-card {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+    margin-bottom: 30px; /* Space between cards */
+
+    background-color: #2e2b5f;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px; /* Fixed height for images */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    padding: 20px;
+    
+}
+
+.card-title {
+    color: #fbfb00; /* Color for titles */
+    font-size: 1.6rem; /* Increased font size */
+    text-align: center; /* Center title */
+    margin-top: 10px; /* Margin above title */
+    font-weight: bold; /* Bold title */
+}
+
+.card-text {
+    color: white; /* Text color */
+    margin-bottom: 20px; /* Margin below text */
+    text-align: center; /* Center text */
+    padding: 0 15px; /* Padding for text */
+    font-size: 18px !important;
+}
+
+.call-now-button {
+    background-color: #FF4500; /* Orange button */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    display: inline-block; /* Inline block for width */
+    font-size: 1.1rem; /* Button font size */
+}
+
+.call-now-button:hover {
+    background-color: #FF5733; /* Darker orange on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.4rem; /* Smaller title on mobile */
+    }
+
+    .call-now-button {
+        width: 90%; /* Wider button on mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1.2rem; /* Even smaller title on extra small devices */
+    }
+
+    .card-text {
+        font-size: 0.9rem; /* Smaller text on extra small devices */
+    }
+
+    .call-now-button {
+        font-size: 1rem; /* Smaller button font size */
+    }
+}
+
+/* why choose us */
+/* General Styles for the Why Choose Us Section */
+
+/* General Styles for the Why Choose Us Section */
+.whychooseus-section {
+    padding: 50px 0;
+    background: url('/img/bg-img.png') no-repeat center center; /* Add your image here */
+    background-size: cover; /* Ensures the image covers the entire section */
+    color: #fff; /* Text color for better readability */
+    position: relative;
+    z-index: 1;
+}
+
+/* Add a semi-transparent overlay if needed */
+.whychooseus-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black; /* Dark overlay for better text contrast */
+    z-index: -1; /* Place behind the content */
+}
+
+.whychooseus-section1 {
+    text-align: center;
+}
+
+
+.why-head {
+    margin-bottom: 30px;
+}
+
+.why-head strong {
+    font-size: 36px;
+    color: #FFD700; /* Gold color for a luxurious feel */
+}
+
+.why-choose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.our-skills1, .whyus-1, .ourbest1 {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    flex: 1 1 30%; /* Responsive flexbox */
+    transition: transform 0.3s;
+}
+
+.our-skills1:hover, .whyus-1:hover, .ourbest1:hover {
+    transform: scale(1.05);
+}
+
+.choose-head p {
+    font-size: 24px;
+    color: #FFD700; /* Gold color for section headers */
+    margin-bottom: 15px;
+}
+
+.our-skills3 {
+    color: #ffffff; /* White text for skill descriptions */
+}
+
+.progress-bar-linear {
+    margin: 15px 0;
+}
+
+.progress-bar-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #fff; /* White text for progress bars */
+}
+
+.progress-bar {
+    background: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+}
+
+.barr1, .barr2, .barr3, .barr4, .barr5 {
+    display: block;
+    height: 100%;
+    background: #FFD700; /* Gold color for filled progress */
+}
+
+.choose-us {
+    text-align: left;
+}
+
+.choose-us-2 {
+    margin: 10px 0;
+}
+
+.our-best3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.best-left1 img {
+    width: 50px; /* Icon size */
+    margin-right: 10px;
+}
+
+.best-right1 {
+    text-align: left;
+}
+
+.best-right1 strong {
+    color: #FFD700; /* Gold color for specialties */
+}
+
+.best-right1 p {
+    color: #ffffff; /* White color for specialty descriptions */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .why-choose {
+        flex-direction: column;
+    }
+    .our-skills1, .whyus-1, .ourbest1 {
+        flex: 1 1 100%; /* Full width on small screens */
+        margin: 10px 0;
+    }
+}
+
+
+/* about us */
+
+
+
+
+.testimonial-container {
+
+    background-color: yellow;
+    padding: 30px;
+    border-radius: 10px;
+    background-size: cover;
+
+}
+
+.testimonial-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonial-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.testimonial-card {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.client-name {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.client-review {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-col {
+    margin-bottom: 30px;
+}
+
+.footer-col h5 {
+    color: #ecf0f1;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-col a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: #3498db;
+}
+
+.footer-col .arrow {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.stay-connected {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.stay-connected h5 {
+    font-size: 1.5rem;
+}
+
+.social-icons a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+}
+
+/* Basic styling for h1 */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4A148C; /* Deep purple color, can be adjusted */
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+/* Add shadow and letter spacing */
+h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+/* Add padding for better spacing on mobile devices */
+h1 {
+    padding: 10px;
+}
+
+/* Responsive styling for different screen sizes */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
+
+
+.abouttext {
+    font-size: 14px; /* Base font size */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.7; /* Spacing between lines for better readability */
+    text-align: justify; /* Justified alignment */
+    padding: 15px; /* Internal padding for spacing */
+    background-color: #f9f9f9; /* Subtle background color */
+    border-left: 4px solid #8B008B; /* Left border for visual accent */
+    border-radius: 5px; /* Rounded corners */
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Soft shadow for text */
+    letter-spacing: 0.4px; /* Adds slight spacing between letters */
+}
+
+/* Responsive adjustments for medium and small screens */
+@media (max-width: 768px) {
+    .abouttext {
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .abouttext {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+.h6text{
+    font-size: 20px;
+}
+
+/* Common styles for both icons */
+.whatsapp-icon, .call-icon {
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.whatsapp-icon:hover, .call-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Positioning for the icons */
+.whatsapp-icon {
+    left: 20px;
+}
+
+.call-icon {
+    right: 20px;
+    background-color: #007bff; /* Blue color for call icon */
+}
