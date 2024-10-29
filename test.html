@@ -3,172 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astrology FAQ Section</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Left Side Floating Buttons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
-            color: #34495e;
+        /* Container styling */
+        .floating-buttons {
+            position: fixed;
+            left: 10px; /* Adjust for spacing from the left */
+            bottom: 10px; /* Adjust for spacing from the bottom */
+            display: flex;
+            flex-direction: column-reverse; /* Order buttons from bottom to top */
+            gap: 10px;
+            z-index: 1000;
         }
 
-        .faq-section {
-            padding: 40px 0;
-            background-color: #2c3e50; /* Dark background for the FAQ section */
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        .faq-title {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .faq-title h2 {
-            font-size: 2rem;
-            color: #3498db; /* Bright color for the title */
-        }
-
-        .accordion .card {
-            background-color: #34495e; /* Dark card background */
-            border: none;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .accordion .card-header {
-            border: none;
-            background-color: #34495e;
-        }
-
-        .accordion .card-header h5 {
-            margin: 0;
-            font-size: 1.1rem;
-        }
-
-        .accordion .card-body {
-            background-color: #2c3e50; /* Slightly darker for card body */
-            color: #ecf0f1; /* Light text color */
-            border-radius: 0 0 10px 10px;
-        }
-
-        .accordion .btn-link {
-            color: #ecf0f1; /* Light text color for links */
+        /* Individual button styling */
+        .floating-buttons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
             text-decoration: none;
-            font-weight: bold;
+            transition: transform 0.3s;
         }
 
-        .accordion .btn-link:hover {
-            color: #3498db; /* Highlight on hover */
+        /* Button colors */
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+        
+        .call-btn {
+            background-color: #34B7F1;
         }
 
-        .accordion .fas {
-            transition: transform 0.3s; /* Smooth transition for arrow */
+        .query-btn {
+            background-color: #FF6D00;
         }
 
-        .accordion .collapsed .fas {
-            transform: rotate(-90deg); /* Rotate arrow when collapsed */
-        }
-
-        @media (max-width: 576px) {
-            .faq-title h2 {
-                font-size: 1.5rem; /* Smaller title on mobile */
-            }
+        /* Hover effect */
+        .floating-buttons a:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="faq-section">
-        <div class="faq-title">
-            <h2>Frequently Asked Questions</h2>
-            <p>Find answers to the most common questions about astrology.</p>
-        </div>
-        <div class="accordion" id="faqAccordion">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            What is astrology?
-                            <i class="fas fa-chevron-right float-right"></i>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                    <div class="card-body">
-                        Astrology is the study of celestial bodies' positions and movements, and how they influence human affairs and natural phenomena.
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            How can astrology help me?
-                            <i class="fas fa-chevron-right float-right"></i>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                    <div class="card-body">
-                        Astrology can provide insights into your personality, relationships, and life path, helping you make informed decisions.
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Can astrology predict my future?
-                            <i class="fas fa-chevron-right float-right"></i>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-                    <div class="card-body">
-                        Astrology can offer predictions based on your natal chart, but it is essential to remember that it guides rather than dictates your future.
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingFour">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            What types of astrology are there?
-                            <i class="fas fa-chevron-right float-right"></i>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
-                    <div class="card-body">
-                        There are several branches of astrology, including Natal Astrology, Horary Astrology, Electional Astrology, and Mundane Astrology, each serving different purposes.
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingFive">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            How accurate is astrology?
-                            <i class="fas fa-chevron-right float-right"></i>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
-                    <div class="card-body">
-                        The accuracy of astrology depends on the skill of the astrologer and the specifics of the chart. Many find it to be a helpful tool for self-reflection and guidance.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="floating-buttons">
+    <a href="https://wa.me/yourphonenumber" class="whatsapp-btn" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:yourphonenumber" class="call-btn" title="Call">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+    <a href="query-page-link" class="query-btn" title="Send Query">
+        <i class="fas fa-envelope"></i>
+    </a>
 </div>
 
-<!-- Bootstrap JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
